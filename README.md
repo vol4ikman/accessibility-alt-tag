@@ -14,3 +14,13 @@ Accessibility Alt tag scanner
         test: true
     }
 ```
+
+### Options
+```js
+    test : false,
+    fix  : true,
+    alt  : 'image'
+```
+test - log in console how much images you have pn current page without alt tag
+fix  - add missed alt tags to images
+alt - string, alt value for images
