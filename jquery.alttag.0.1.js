@@ -1,11 +1,3 @@
-jQuery(document).ready(function(){
-
-    jQuery("body").altTag({
-        test: true
-    });
-
-});
-
 (function ( $ ) {
 
     $.fn.altTag = function( options ) {
