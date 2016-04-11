@@ -1,3 +1,11 @@
+jQuery(document).ready(function(){
+
+    jQuery("body").altTag({
+        test: true
+    });
+
+});
+
 (function ( $ ) {
 
     $.fn.altTag = function( options ) {
@@ -12,8 +20,9 @@
         //Run test if enabled
         if( settings.test ) {
 
-            var noAlt   = [];
-            var withAlt = [];
+            var noAlt    = [];
+            var emptyAlt = [];
+            var withAlt  = [];
 
             jQuery("body img").each(function(index,value){
 
@@ -24,24 +33,20 @@
                 } else {
                     noAlt.push(index);
                 }
-
             });
 
-            console.log("total images without alt tag: " + noAlt.length);
-
+            console.log("total images without 'alt' tag: " + noAlt.length);
+            console.log("total images with 'alt' tag: " + withAlt.length);
         }
 
         //Fix missing alt tags with default image string
         if( settings.fix ) {
 
             jQuery("body img").each(function(index,value){
-
                 var imageElement = jQuery(this);
-
                 if( !imageElement.attr("alt") ){
                     imageElement.attr("alt",settings.alt)
                 }
-
             });
 
         }
