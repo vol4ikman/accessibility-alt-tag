@@ -23,6 +23,6 @@ Accessibility Alt tag scanner
     roleLink : false
 ```
 <p>test - log in console how much images you have pn current page without alt tag</p>
-fix  - add missed alt tags to images
-alt - string, alt value for images
-roleLink - add role="link" to each <a> tag on the DOM
+<p>fix  - add missed alt tags to images</p>
+<p>alt - string, alt value for images</p>
+<p>roleLink - add role="link" to each <a> tag on the DOM</p>
