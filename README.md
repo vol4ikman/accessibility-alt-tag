@@ -15,12 +15,14 @@ Accessibility Alt tag scanner
     }
 ```
 
-### Options
+### Default Options
 ```js
     test : false,
     fix  : true,
-    alt  : 'image'
+    alt  : 'image',
+    roleLink : false
 ```
 test - log in console how much images you have pn current page without alt tag
 fix  - add missed alt tags to images
 alt - string, alt value for images
+roleLink - add role="link" to each <a> tag on the DOM
