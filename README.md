@@ -1,5 +1,6 @@
-# accessibility-alt-tag
-Accessibility Alt tag scanner
+# Accessibility helper jQuery Plugin
+<p>Accessibility Alt tag scanner</p>
+<p>Accessibility role="link"</p>
 
 
 ### Usage
