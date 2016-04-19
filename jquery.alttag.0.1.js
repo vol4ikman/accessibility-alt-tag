@@ -1,12 +1,3 @@
-jQuery(document).ready(function(){
-
-    jQuery("body").altTag({
-        test: true,
-        roleLink: true
-    });
-
-});
-
 (function ( $ ) {
 
     $.fn.altTag = function( options ) {
@@ -16,7 +7,8 @@ jQuery(document).ready(function(){
             test:     false,
             fix:      true,
             alt:      'image',
-            roleLink: false
+            rolelink: false,
+            landmark: false
         }, options );
 
         var noAlt    = [];
@@ -47,10 +39,18 @@ jQuery(document).ready(function(){
         }
 
         //Add role link to each <a> tag
-        if( settings.roleLink ) {
+        if( settings.rolelink ) {
             jQuery("body a").each(function(index,value){
                 jQuery(this).attr("role","link");
             });
+        }
+
+        if( settings.landmark ) {
+            jQuery("header").attr("role","banner");
+            jQuery("aside").attr("role","complementary");
+            jQuery("footer").attr("role","contentinfo");
+            jQuery("main").attr("role","main");
+            jQuery(".search, #search, .searchform, #searchform").attr("role","search");
         }
 
 
