@@ -24,11 +24,11 @@
     rolelink : false,
     landmark: false
 ```
-<p><code>test</code> - log in console how much images you have pn current page without alt tag</p>
-<p><code>fix</code>  - add missed alt tags to images</p>
+<p><code>test</code> - [true/false] log in console how much images you have pn current page without alt tag</p>
+<p><code>fix</code>  - [true/false] add missed alt tags to images</p>
 <p><code>alt</code> - string, alt value for images</p>
-<p><code>roleLink</code> - add role="link" to each <a> tag on the DOM</p>
-<p><code>landmark</code>:</p>
+<p><code>roleLink</code> - [true/false] add role="link" to each <a> tag on the DOM</p>
+<p><code>landmark</code> - [true/false] add aria landmarks to HTML5 elements, see table below:</p>
 <table>
     <caption>ARIA landmarks and their corresponding HTML5 elements</caption>
     <thead>
