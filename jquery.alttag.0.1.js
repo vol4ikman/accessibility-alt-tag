@@ -47,6 +47,7 @@
 
         if( settings.landmark ) {
             jQuery("header").attr("role","banner");
+            jQuery("nav").attr("role","navigation");
             jQuery("aside").attr("role","complementary");
             jQuery("footer").attr("role","contentinfo");
             jQuery("main").attr("role","main");
