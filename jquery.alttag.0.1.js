@@ -2,7 +2,7 @@
 
     $.fn.altTag = function( options ) {
 
-        //Dafaults
+        //Defaults
         var settings = $.extend({
             test:     false,
             fix:      true,
